@@ -18,7 +18,6 @@ public class Main {
         double y3 = m.chiso2(82.3,1.91);
         System.out.println("Bài Tập 2 - Ý 3");
         System.out.println("Chỉ số BMI: " + y3);
-
     }
 
 }
