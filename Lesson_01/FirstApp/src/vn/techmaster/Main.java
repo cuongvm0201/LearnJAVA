@@ -6,8 +6,10 @@ import java.util.Calendar;
 public class Main {
     public static void main(String[] args) {
         Caculator c = new Caculator();
-        c.pheptinh(22, 11);
-
+        c.phepcong(22, 11);
+        c.pheptru(22, 11);
+        c.phepnhan(22, 11);
+        c.phepchia(22, 11);
 
         Bmi m = new Bmi();
         m.chiso(78.5,1.72);
