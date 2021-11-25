@@ -33,13 +33,20 @@ public class creatArray {
         System.out.println("--------------------------");
         System.out.println("Nhập chuỗi bất kỳ: ");
         String strRandom = sc.next();
-        System.out.println("Chuỗi vừa nhập nằm ở vị trí: ");
-            for (int i = 0; i < n ; i++) {
+        int isCheck = 0;
+            for (int i = 0; i < n ; i++)
+            {
                 if (strRandom.equals(Array[i]))
                 {
-                    System.out.print(" " +i);
+                    isCheck++;
+                    System.out.println("Chuỗi vừa nhập nằm ở vị trí: " + i);
+
                 }
             }
+             if(isCheck == 0)
+        {
+            System.out.println("Chuỗi vừa nhập không có trong mảng");
+        }
         sc.close();
     }
 }
