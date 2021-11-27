@@ -10,7 +10,7 @@ public class creatArray {
 //       -Đếm số lần “Java” xuất hiện trong mảng.
 //       -Nhập vào từ bàn phím chuỗi bất kỳ, kiểm tra chuỗi đó ở vị trí nào của mảng.
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập n: ");
+        System.out.println("Nhập kích thước mảng: ");
         int n = sc.nextInt();
         String [] Array = new String[n];
         for (int i = 0; i < n ; i++){
@@ -34,19 +34,19 @@ public class creatArray {
         System.out.println("Nhập chuỗi bất kỳ: ");
         String strRandom = sc.next();
         int isCheck = 0;
+        System.out.println("Chuỗi vừa nhập nằm ở vị trí: ");
             for (int i = 0; i < n ; i++)
             {
                 if (strRandom.equals(Array[i]))
                 {
                     isCheck++;
-                    System.out.println("Chuỗi vừa nhập nằm ở vị trí: " + i);
-
+                    System.out.print(" " + i);
                 }
             }
              if(isCheck == 0)
-        {
+                {
             System.out.println("Chuỗi vừa nhập không có trong mảng");
-        }
+                }
         sc.close();
     }
 }
