@@ -20,7 +20,12 @@ public class printStar {
             }
             System.out.println();
         }
-        
+        System.out.println("----------------------");
+        System.out.println("In ra hình tam giác 2");
+        System.out.println("\t" + "  " + "*");
+        System.out.println("\t" + "*" + "\t" + "*");
+        System.out.println("  " + "*" + "   " + "*" + "   " + "*");
+        System.out.println("*" + "\t" + "*" + "\t" + "*" + "\t" + "*");
         System.out.println("----------------------");
         }
     }
