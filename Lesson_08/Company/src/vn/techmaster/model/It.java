@@ -1,4 +1,4 @@
-package vn.techmaster.allclass;
+package vn.techmaster.model;
 
 public class It extends Staff {
     private int overTime;

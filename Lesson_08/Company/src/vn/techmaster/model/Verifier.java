@@ -1,6 +1,4 @@
-package vn.techmaster.allclass;
-
-import vn.techmaster.allclass.Staff;
+package vn.techmaster.model;
 
 public class Verifier extends Staff {
     private int findBug;

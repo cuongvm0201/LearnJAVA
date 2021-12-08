@@ -1,6 +1,4 @@
-package vn.techmaster.allclass;
-
-import java.util.Scanner;
+package vn.techmaster.model;
 
 public class Staff {
     private int id;
