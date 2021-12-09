@@ -106,7 +106,7 @@ public class Service {
     public void findCustomerID(ArrayList<Customer> listCustomer) {
         Scanner sc = new Scanner(System.in);
         Mainmenu m = new Mainmenu();
-        System.out.println("Nhập ID khách hàng muốn tìm kiếm: ");
+        System.out.println("Nhập mã số ID khách hàng muốn tìm kiếm: ");
         int n = sc.nextInt();
         sc.nextLine();
         int count = 0;
