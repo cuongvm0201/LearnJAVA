@@ -83,16 +83,16 @@ public class Service {
         String country = sc.nextLine();
         System.out.println("Nhập SĐT: ");
         do {
-            String newMobile = sc.nextLine();
-            flag = Validate.phoneValidator(newMobile);
+            String mobile = sc.nextLine();
+            flag = Validate.phoneValidator(mobile);
             if (!flag){
                 System.out.println("Sai định dạng, nhập lại SĐT: ");
             }}while (flag);
             String mobile = sc.nextLine();
         System.out.println("Nhập Email: ");
         do {
-            String newEmail = sc.nextLine();
-            flag1 = Validate.emailValidator(newEmail);
+            String email = sc.nextLine();
+            flag1 = Validate.emailValidator(email);
             if (!flag1){
                 System.out.println("Sai định dạng, nhập lại Email: ");
             }
