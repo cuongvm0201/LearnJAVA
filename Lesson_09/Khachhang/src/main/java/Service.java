@@ -55,9 +55,6 @@ public class Service {
 
     public void addNewCustomer(ArrayList<Customer> listCustomer) {
         Gender gender;
-
-        boolean flag;
-        boolean flag1;
         Scanner sc = new Scanner(System.in);
         System.out.println("Vui lòng nhập thông tin:");
         int id = (listCustomer.size() + 1);
@@ -82,21 +79,8 @@ public class Service {
         System.out.println("Nhập quê quán: ");
         String country = sc.nextLine();
         System.out.println("Nhập SĐT: ");
-        do {
-            String newMobile = sc.nextLine();
-            flag = Validate.phoneValidator(newMobile);
-            if (!flag){
-                System.out.println("Sai định dạng, nhập lại SĐT: ");
-            }}while (flag);
-            String mobile = sc.nextLine();
+        String mobile = sc.nextLine();
         System.out.println("Nhập Email: ");
-        do {
-            String newEmail = sc.nextLine();
-            flag1 = Validate.emailValidator(newEmail);
-            if (!flag1){
-                System.out.println("Sai định dạng, nhập lại Email: ");
-            }
-        }while (flag1);
         String email = sc.nextLine();
         Customer newCustomer = new Customer(id, name, date, gender, country, mobile, email); //Tạo đối tượng khách hàng mới
         listCustomer.add(newCustomer);
@@ -168,29 +152,14 @@ public class Service {
                                         System.out.println(listCustomer.get(i));
                                         break;
                                     case 5:
-                                        boolean flag;
                                         System.out.println("Nhập SĐT mới cho khách hàng:");
-                                        do {
-                                            String newMobile = sc.nextLine();
-                                            flag = Validate.phoneValidator(newMobile);
-                                            if (!flag){
-                                                System.out.println("Sai định dạng, nhập lại SĐT mới: ");
-                                            }}while (flag);
                                         String newMobile = sc.nextLine();
                                         listCustomer.get(i).setMobile(newMobile);
                                         System.out.println("Thông tin khách hàng sau khi thay đổi SĐT: ");
                                         System.out.println(listCustomer.get(i));
                                         break;
                                     case 6:
-                                        boolean flag1;
                                         System.out.println("Nhập Email mới cho khách hàng:");
-                                        do {
-                                            String newEmail = sc.nextLine();
-                                            flag1 = Validate.emailValidator(newEmail);
-                                            if (!flag1){
-                                                System.out.println("Sai định dạng, nhập lại Email: ");
-                                            }
-                                        }while (flag1);
                                         String newEmail = sc.nextLine();
                                         listCustomer.get(i).setEmail(newEmail);
                                         System.out.println("Thông tin khách hàng sau khi thay đổi Email: ");
