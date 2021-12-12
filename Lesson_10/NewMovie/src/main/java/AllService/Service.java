@@ -1,3 +1,7 @@
+package AllService;
+
+import Model.Film;
+
 import java.util.*;
 
 
@@ -5,6 +9,12 @@ public class Service implements IService {
 
     @Override
     public void printList(ArrayList<Film> listFilm) {
+        Collections.sort(listFilm, new Comparator<Film>() {
+            @Override
+            public int compare(Film o1, Film o2) {
+                return o1.getId() - o2.getId();
+            }
+        });
         System.out.println("Danh sách toàn bộ phim: ");
         for (Film f : listFilm) {
             System.out.println(f);
@@ -23,6 +33,7 @@ public class Service implements IService {
         for (Film f : listFilm) {
             System.out.println(f);
         }
+
     }
 
 

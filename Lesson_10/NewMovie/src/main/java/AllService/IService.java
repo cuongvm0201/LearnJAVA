@@ -1,3 +1,7 @@
+package AllService;
+
+import Model.Film;
+
 import java.util.ArrayList;
 
 public interface IService {

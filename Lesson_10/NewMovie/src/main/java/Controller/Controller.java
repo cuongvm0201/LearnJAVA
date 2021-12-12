@@ -1,3 +1,9 @@
+package Controller;
+
+import AllService.Service;
+import Model.Film;
+import Model.Repository;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
