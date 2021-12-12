@@ -5,10 +5,10 @@ public class Goods {
     public String name;
     public String content;
     public int quanlity;
-    public int price;
+    public long price;
     public String type;
 
-    public Goods(int idNumber, String name, String content, int quanlity, int price, String type) {
+    public Goods(int idNumber, String name, String content, int quanlity, long price, String type) {
         this.idNumber = idNumber;
         this.name = name;
         this.content = content;
