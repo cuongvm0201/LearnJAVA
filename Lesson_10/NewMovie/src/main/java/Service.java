@@ -16,7 +16,7 @@ public class Service implements IService {
         Collections.sort(listFilm, new Comparator<Film>() {
             @Override
             public int compare(Film o1, Film o2) {
-                return o1.getMoviename().replaceAll("[-+.^:,]", "").toUpperCase().compareTo(o2.getMoviename().replaceAll("[-+.^:,]", "").toUpperCase());
+                return o1.getMoviename().replaceAll("[-+.^:,]", "").compareTo(o2.getMoviename().replaceAll("[-+.^:,]", ""));
             }
         });
         System.out.println("Danh sách film sau khi sắp xếp theo tên: ");
