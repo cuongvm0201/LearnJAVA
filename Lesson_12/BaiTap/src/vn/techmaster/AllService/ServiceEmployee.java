@@ -1,5 +1,7 @@
 package vn.techmaster.AllService;
 
+
+
 import java.util.ArrayList;
 
 public class ServiceEmployee<T> {
@@ -15,6 +17,5 @@ public class ServiceEmployee<T> {
             System.out.println(object);
         }
     }
-
 
 }

@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Controller {
     Service service = new Service();
     Scanner sc = new Scanner(System.in);
+
     public void mainMenu() {
         boolean isCheck = false;
         while (!isCheck) {
@@ -22,6 +23,9 @@ public class Controller {
                     break;
                 case 3:
                     service.printAll();
+                    break;
+                case 4:
+                    service.insertNewEmployee();
                     break;
                 case 0:
                     isCheck = true;
@@ -38,6 +42,7 @@ public class Controller {
         System.out.println("1 - Xem danh sách nhân viên bàn");
         System.out.println("2 - Xem danh sách nhân viên bếp");
         System.out.println("3 - Xem tất cả danh sách nhân viên");
+        System.out.println("4 - Thêm nhân viên");
         System.out.println("0 - Dừng chương trình");
         System.out.println("Lựa chọn của bạn là: ");
     }
