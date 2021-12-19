@@ -1,4 +1,4 @@
-package vn.techmaster;
+package vn.techmaster.AllService;
 
 import java.util.ArrayList;
 

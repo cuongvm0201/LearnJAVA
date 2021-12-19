@@ -1,6 +1,10 @@
-package vn.techmaster;
+package vn.techmaster.AllService;
 
 
+import vn.techmaster.AllService.ServiceEmployee;
+import vn.techmaster.Model.Kitchen;
+import vn.techmaster.Model.Repository;
+import vn.techmaster.Model.Waiter;
 
 public class Service {
     ServiceEmployee<Waiter> listWaiter;

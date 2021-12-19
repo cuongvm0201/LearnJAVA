@@ -1,4 +1,4 @@
-package vn.techmaster;
+package vn.techmaster.Model;
 
 public class Kitchen extends Employee {
     private long serviceCharge;

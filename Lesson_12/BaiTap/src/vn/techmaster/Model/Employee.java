@@ -1,4 +1,4 @@
-package vn.techmaster;
+package vn.techmaster.Model;
 
 public abstract class Employee {
     private int id;

@@ -1,4 +1,4 @@
-package vn.techmaster;
+package vn.techmaster.Model;
 
 public class Waiter extends Employee {
     private long compensate;

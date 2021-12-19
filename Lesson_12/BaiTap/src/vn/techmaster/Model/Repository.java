@@ -1,4 +1,6 @@
-package vn.techmaster;
+package vn.techmaster.Model;
+
+import vn.techmaster.AllService.ServiceEmployee;
 
 public class Repository {
     public static ServiceEmployee<Waiter> addWaiter() {

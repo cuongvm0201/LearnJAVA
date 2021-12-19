@@ -1,5 +1,7 @@
-package vn.techmaster;
+package vn.techmaster.Controller;
 
+
+import vn.techmaster.AllService.Service;
 
 import java.util.Scanner;
 
