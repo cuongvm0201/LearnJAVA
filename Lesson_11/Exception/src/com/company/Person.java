@@ -1,13 +1,13 @@
-package vn.techmaster;
+package com.company;
 
 public class Person {
-    private int id;
+    private String id;
     private String name;
     private String email;
     private String mobile;
     private long salary;
 
-    public Person(int id, String name, String email, String mobile, long salary) {
+    public Person(String id, String name, String email, String mobile, long salary) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -15,11 +15,11 @@ public class Person {
         this.salary = salary;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -57,12 +57,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", mobile='" + mobile + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "Mã: " + id + " - " +
+                "Tên: " + name + " - " +
+                "Email: " + email + " - " +
+                "SĐT: " + mobile + " - " +
+                "Lương: " + salary;
     }
 }
