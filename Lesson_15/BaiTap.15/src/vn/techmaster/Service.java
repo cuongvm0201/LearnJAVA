@@ -29,10 +29,10 @@ public class Service {
     public void getLibarryByType() {
         System.out.println("Nhập thể loại sách: ");
         String findType = sc.nextLine();
-        ArrayList<String> listALL = new ArrayList();
-        listALL.add("Sách giáo khoa: " +"\n"+listBook);
-        listALL.add("Báo, tạp chí: " +"\n"+listMagazine);
-        listALL.add("Tài liệu diện tử: " +"\n"+listDocument);
+        ArrayList<Object> listALL = new ArrayList<>();
+        listALL.add(listBook);
+        listALL.add(listMagazine);
+        listALL.add(listDocument);
         int count = 0;
         for (Object object: listALL){
                 if(object.toString().toLowerCase().contains(findType.toLowerCase())){
@@ -44,6 +44,7 @@ public class Service {
         if (count == 0){
             System.out.println("Không có thể loại này");
         }
+
     }
 
     public void sortDownloadDocument(){
