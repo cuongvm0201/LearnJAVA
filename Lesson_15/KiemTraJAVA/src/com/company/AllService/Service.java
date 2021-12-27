@@ -15,7 +15,7 @@ public class Service {
         System.out.println("Nhập username: ");
         String username = CheckInput.checkUsername();
         for (int i = 0; i < listUser.size(); i++) {
-            if (listUser.get(i).getUsername().equalsIgnoreCase(username)) {
+            if (listUser.get(i).getUsername().equals(username)) {
                 count++;
                 System.out.println("Nhập mật khẩu: ");
                 String password = sc.nextLine();
@@ -131,7 +131,6 @@ public class Service {
                 System.out.println(e.getMessage() + ", vui lòng nhập lại:");
             }
         }
-
         return newUsername;
     }
 
