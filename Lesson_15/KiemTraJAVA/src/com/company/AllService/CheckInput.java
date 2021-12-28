@@ -13,10 +13,10 @@ public class CheckInput {
         while (!isCheck) {
             try {
                 username = sc.nextLine();
-                if (username.trim().isEmpty()) throw new MyException("Tài khoản không được để trống hoặc có khoảng trắng,");
+                if (!Validate.validateUsername(username)) throw new MyException("Tài khoản không được để trống hoặc có ký tự đặc biệt,");
                 isCheck = true;
             } catch (MyException e) {
-                System.out.println(e.getMessage() + " vui lòng nhập lại");
+                System.out.println(e.getMessage() + " vui lòng nhập lại:");
             }
         }
         return username;
