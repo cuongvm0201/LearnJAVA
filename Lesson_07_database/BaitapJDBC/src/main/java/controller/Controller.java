@@ -13,8 +13,6 @@ public class Controller {
     FilmService service = new FilmService();
     ConnectJDBC connectJDBC = new ConnectJDBC();
     Connection conn = connectJDBC.connect();
-    ArrayList<Film> films;
-    ArrayList<ActorFilm> actorFilms;
     Scanner sc = new Scanner(System.in);
     public void mainMenu() {
         boolean isCheck = false;
