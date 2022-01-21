@@ -12,4 +12,6 @@ public interface IService {
     public void sortByRunTime(ArrayList<Film> listFilm);
 
     public void sortByView(ArrayList<Film> listFilm);
+
+
 }

@@ -1,12 +1,14 @@
 package AllService;
 
 import Model.Film;
+import Model.Repository;
 
 import java.util.*;
 
 
 public class Service implements IService {
-
+    Repository repository = new Repository();
+    ArrayList<Film> listFilm = repository.getData();
     @Override
     public void printList(ArrayList<Film> listFilm) {
         Collections.sort(listFilm, new Comparator<Film>() {
@@ -26,7 +28,7 @@ public class Service implements IService {
         Collections.sort(listFilm, new Comparator<Film>() {
             @Override
             public int compare(Film o1, Film o2) {
-                return o1.getMoviename().replaceAll("[-+.^:,]", "").compareTo(o2.getMoviename().replaceAll("[-+.^:,]", ""));
+                return o1.getTitle().replaceAll("[-+.^:,]", "").compareTo(o2.getTitle().replaceAll("[-+.^:,]", ""));
             }
         });
         System.out.println("Danh sách film sau khi sắp xếp theo tên: ");
@@ -42,7 +44,7 @@ public class Service implements IService {
         Collections.sort(listFilm, new Comparator<Film>() {
             @Override
             public int compare(Film o1, Film o2) {
-                return o1.getRuntime() - o2.getRuntime();
+                return o1.getPublishingYear() - o2.getPublishingYear();
             }
         });
         System.out.println("Danh sách film sau khi sắp xếp theo thời lượng chiếu: ");
@@ -56,7 +58,7 @@ public class Service implements IService {
         Collections.sort(listFilm, new Comparator<Film>() {
             @Override
             public int compare(Film o1, Film o2) {
-                return o1.getView() - o2.getView();
+                return o1.getPageNumber() - o2.getPageNumber();
             }
         });
         System.out.println("Danh sách film sau khi sắp xếp theo lượt view: ");
@@ -65,5 +67,18 @@ public class Service implements IService {
         }
     }
 
+    public Map<String [], Integer> countByType (ArrayList<Film> listFilm){
+        Map<String [], Integer> typeMap = new HashMap<>();
+
+        for (Film p: listFilm){
+            String [] type = p.getCategory();
+            if(typeMap.get(type) == null){
+                typeMap.put(type, 1);
+            } else {
+                typeMap.put(type, typeMap.get(type) + 1);
+            }
+        }
+        return typeMap;
+    }
 
 }

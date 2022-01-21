@@ -13,7 +13,7 @@ public class Repository {
         ArrayList<Film> listFilm = new ArrayList<>();
         Gson gson = new Gson();
         try {
-            FileReader reader = new FileReader("Film.json");
+            FileReader reader = new FileReader("Book.json");
             Type objectType = new TypeToken<ArrayList<Film>>() {
             }.getType();
             listFilm = gson.fromJson(reader, objectType);

@@ -35,11 +35,12 @@ public class Service {
 
         Map<String, Integer> mapType = new HashMap<>();
         for(Book book : listBook){
-             for (int i = 0; i< book.getCategory().length;i++){
-                 if(mapType.get(book.getCategory()[i]) == null){
-                     mapType.put(book.getCategory()[i], 1);
+            String [] category = book.getCategory();
+             for (int i = 0; i< category.length;i++){
+                 if(mapType.get(category[i]) == null){
+                     mapType.put(category[i], 1);
                  }else{
-                     mapType.put(book.getCategory()[i], mapType.get(book.getCategory()[i]) + 1);
+                     mapType.put(category[i], mapType.get(category[i]) + 1);
                  }
              }
         }

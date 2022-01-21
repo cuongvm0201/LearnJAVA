@@ -15,28 +15,30 @@ import lombok.Setter;
 public class Film {
     @SerializedName("id")
     private int id;
-    @SerializedName("moviename")
-    private String moviename;
-    @SerializedName("type")
-    private String type;
-    @SerializedName("director")
-    private String director;
-    @SerializedName("runtime")
-    private int runtime;
-    @SerializedName("realease_time")
-    private String realease_time;
-    @SerializedName("view")
-    private int view;
+    @SerializedName("title")
+    private String title;
+    @SerializedName("author")
+    private String author;
+    @SerializedName("category")
+    private String [] category;
+    @SerializedName("publishingYear")
+    private int publishingYear;
+    @SerializedName("publishingCompany")
+    private String publishingCompany;
+    @SerializedName("pageNumber")
+    private int pageNumber;
 
     @Override
     public String toString() {
         return "Mã số: " + id + " - " +
-                "Tên phim: " + moviename + " - " +
-                "Thể loại: " + type + " - " +
-                "Đạo diễn: " + director + " - " +
-                "Thời lượng chiếu: " + runtime + " - " +
-                "Thời gian ra mắt: " + realease_time + " - " +
-                "Lượt xem: " + view;
+                "Tên phim: " + title + " - " +
+                "Thể loại: " + author + " - " +
+                "Đạo diễn: " + category + " - " +
+                "Thời lượng chiếu: " + publishingYear + " - " +
+                "Thời gian ra mắt: " + publishingCompany + " - " +
+                "Lượt xem: " + pageNumber;
     }
 
 }
+
+

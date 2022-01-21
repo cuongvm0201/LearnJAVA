@@ -9,8 +9,7 @@ import java.util.Scanner;
 
 public class Controller {
     Service service = new Service();
-    Scanner sc = new Scanner(System.in);
-    ArrayList<Book> listBook = Repository.getBook();
+
 
     public void mainMenu() {
         boolean isCheck = false;

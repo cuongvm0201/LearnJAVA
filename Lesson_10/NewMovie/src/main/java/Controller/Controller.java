@@ -5,6 +5,7 @@ import Model.Film;
 import Model.Repository;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Controller {
@@ -30,6 +31,8 @@ public class Controller {
                     break;
                 case 4:
                     service.sortByView(listFilm);
+                    break;
+                case 5:
                     break;
                 case 0:
                     isCheck = true;
