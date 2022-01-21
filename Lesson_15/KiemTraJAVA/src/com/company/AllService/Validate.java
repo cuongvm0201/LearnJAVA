@@ -18,7 +18,12 @@ public class Validate {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
-
+    
+    public static boolean validateUsername(String username) {
+        Pattern pattern = Pattern.compile(USERNAME_REGEX);
+        Matcher matcher = pattern.matcher(username);
+        return matcher.matches();
+    }
 
 
 }
