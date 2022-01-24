@@ -106,6 +106,16 @@ public class FilmService {
                 return film;
         }
 
+        public void updateDescription(Connection conn){
+                String query ="UPDATE film SET description = 'Thái Nhạc Buồn' WHERE title = 'ACADEMY DINOSAUR'";
+                try {
+                        Statement stm = conn.createStatement();
+                        stm.executeUpdate(query);
+                        System.out.println("Sửa thành công");
+                } catch (SQLException e) {
+                        e.printStackTrace();
+                }
 
+        }
 
 }
